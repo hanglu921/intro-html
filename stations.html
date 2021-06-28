@@ -1,0 +1,1549 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stations</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <header class="bg--white header-height">
+        <nav class="wrapper">
+            <ul class="float--right">
+                <li>
+                    <a href="index.html" class="text-transform--uppercase color--4F4846">
+                        Home
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="stations.html" class="text-transform--uppercase color--4F4846">
+                        Alternative Fuel Stations
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vehicles.html" class="text-transform--uppercase color--4F4846">
+                        Alternative Fuel Vehicles
+                        <span></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about_us.html" class="text-transform--uppercase color--4F4846">
+                        About us
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bg--E8CEBF">
+            <div class="wrapper">
+                <article class="o-tease  display--flex align-items--start jc--center">
+                    <div class="leftSide--text width--58 margin-r--02">
+                        <div
+                            class="section-heading text-align--center text-transform--uppercase line-height--000 margin-b--6">
+                            <h1 class="c-heading color--white font-size--1000 padding-tb--075 opacity--030">
+                                Stations
+                            </h1>
+                            <h6 class="font-size--0200 color--white font-weight--400"> Alternative Fuel Stations</h6>
+                        </div>
+                        <p class="c-title color--white font-weight--400 font-size--18 margin-t--075">
+                            A fraction of the NREL Database of alternative fuel stations, that includes biodiesel,
+                            compressed natural gas, ethanol, electric charging, hydrogen, liquefied natural gas, and
+                            propane station locations.
+                        </p>
+
+                        <br />
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="container">
+            <h2>All Fuel Stations (nearest to USF)</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-striped table-hovers table-sm table-borderless">
+                    <thead class="thead-light">
+                        <tr>
+                            <th title="Field #1">access_code</th>
+                            <th title="Field #2">access_days_time</th>
+                            <th title="Field #3">access_detail_code</th>
+                            <th title="Field #4">cards_accepted</th>
+                            <th title="Field #5">date_last_confirmed</th>
+                            <th title="Field #6">expected_date</th>
+                            <th title="Field #7">fuel_type_code</th>
+                            <th title="Field #8">groups_with_access_code</th>
+                            <th title="Field #9">id</th>
+                            <th title="Field #10">open_date</th>
+                            <th title="Field #11">owner_type_code</th>
+                            <th title="Field #12">status_code</th>
+                            <th title="Field #13">station_name</th>
+                            <th title="Field #14">station_phone</th>
+                            <th title="Field #15">updated_at</th>
+                            <th title="Field #16">facility_type</th>
+                            <th title="Field #17">geocode_status</th>
+                            <th title="Field #18">latitude</th>
+                            <th title="Field #19">longitude</th>
+                            <th title="Field #20">city</th>
+                            <th title="Field #21">intersection_directions</th>
+                            <th title="Field #22">plus4</th>
+                            <th title="Field #23">state</th>
+                            <th title="Field #24">street_address</th>
+                            <th title="Field #25">zip</th>
+                            <th title="Field #26">country</th>
+                            <th title="Field #27">bd_blends</th>
+                            <th title="Field #28">cng_dispenser_num</th>
+                            <th title="Field #29">cng_fill_type_code</th>
+                            <th title="Field #30">cng_psi</th>
+                            <th title="Field #31">cng_renewable_source</th>
+                            <th title="Field #32">cng_total_compression</th>
+                            <th title="Field #33">cng_total_storage</th>
+                            <th title="Field #34">cng_vehicle_class</th>
+                            <th title="Field #35">e85_blender_pump</th>
+                            <th title="Field #36">e85_other_ethanol_blends</th>
+                            <th title="Field #37">ev_connector_types/0</th>
+                            <th title="Field #38">ev_dc_fast_num</th>
+                            <th title="Field #39">ev_level1_evse_num</th>
+                            <th title="Field #40">ev_level2_evse_num</th>
+                            <th title="Field #41">ev_network</th>
+                            <th title="Field #42">ev_network_web</th>
+                            <th title="Field #43">ev_other_evse</th>
+                            <th title="Field #44">ev_pricing</th>
+                            <th title="Field #45">ev_renewable_source</th>
+                            <th title="Field #46">hy_is_retail</th>
+                            <th title="Field #47">hy_pressures</th>
+                            <th title="Field #48">hy_standards</th>
+                            <th title="Field #49">hy_status_link</th>
+                            <th title="Field #50">lng_renewable_source</th>
+                            <th title="Field #51">lng_vehicle_class</th>
+                            <th title="Field #52">lpg_primary</th>
+                            <th title="Field #53">lpg_nozzle_types</th>
+                            <th title="Field #54">ng_fill_type_code</th>
+                            <th title="Field #55">ng_psi</th>
+                            <th title="Field #56">ng_vehicle_class</th>
+                            <th title="Field #57">access_days_time_fr</th>
+                            <th title="Field #58">intersection_directions_fr</th>
+                            <th title="Field #59">bd_blends_fr</th>
+                            <th title="Field #60">groups_with_access_code_fr</th>
+                            <th title="Field #61">ev_pricing_fr</th>
+                            <th title="Field #62">ev_network_ids/station/0</th>
+                            <th title="Field #63">ev_network_ids/posts/0</th>
+                            <th title="Field #64">distance</th>
+                            <th title="Field #65">distance_km</th>
+                            <th title="Field #66">ev_network_ids/posts/1</th>
+                            <th title="Field #67">ev_connector_types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">161552</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF PATEL CGS</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.055817</td>
+                            <td align="right">-82.408233</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>11810 USF Alumni Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">1</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL130335</td>
+                            <td align="right">260783</td>
+                            <td align="right">0.22473</td>
+                            <td align="right">0.36167</td>
+                            <td align="right"></td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">145759</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF LOT 36 EVSE 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.05861</td>
+                            <td align="right">-82.41066</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>USF Sago Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1940851</td>
+                            <td align="right">2294001</td>
+                            <td align="right">0.28533</td>
+                            <td align="right">0.45919</td>
+                            <td align="right">2294011</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2020-11-03</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">150618</td>
+                            <td>2019-09-30</td>
+                            <td>P</td>
+                            <td>E</td>
+                            <td>Home2 Suites Tampa USF near Busch Gardens - Tesla Destination</td>
+                            <td>813-750-8844 877-798-3752</td>
+                            <td>2021-03-11T23:22:17Z</td>
+                            <td> </td>
+                            <td>200-9</td>
+                            <td align="right">28.053327</td>
+                            <td align="right">-82.417066</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>11606 N McKinley Dr</td>
+                            <td align="right">33612</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>TESLA</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>Tesla Destination</td>
+                            <td>https://www.tesla.com/destination-charging</td>
+                            <td> </td>
+                            <td>Free</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>74918</td>
+                            <td align="right"></td>
+                            <td align="right">0.34293</td>
+                            <td align="right">0.55189</td>
+                            <td align="right"></td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">174530</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF BEARD GARAGE 04</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.058704</td>
+                            <td align="right">-82.416794</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>3800 USF Alumni Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1943281</td>
+                            <td align="right">2297081</td>
+                            <td align="right">0.42574</td>
+                            <td align="right">0.68516</td>
+                            <td align="right">2297091</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">146690</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF BEARD GARAGE 03</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.058798</td>
+                            <td align="right">-82.4168</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>3800 USF Alumni Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1944131</td>
+                            <td align="right">2298131</td>
+                            <td align="right">0.43038</td>
+                            <td align="right">0.69263</td>
+                            <td align="right">2298141</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">161591</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF BEARD GARAGE 02</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.058941</td>
+                            <td align="right">-82.417357</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>3800 USF Beard Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL119575</td>
+                            <td align="right">152635</td>
+                            <td align="right">0.46232</td>
+                            <td align="right">0.74403</td>
+                            <td align="right">152637</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">179835</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF BEARD GARAGE 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.058963</td>
+                            <td align="right">-82.417354</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>3800 USF Beard Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL117685</td>
+                            <td align="right">149269</td>
+                            <td align="right">0.46317</td>
+                            <td align="right">0.7454</td>
+                            <td align="right">149271</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">174523</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF COLLINS EVSE 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.061285</td>
+                            <td align="right">-82.4126</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>12075 Leroy Collins Blvd</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1942651</td>
+                            <td align="right">9249601</td>
+                            <td align="right">0.46717</td>
+                            <td align="right">0.75184</td>
+                            <td align="right">9249611</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">146628</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF COLLINS EVSE 02</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.061333</td>
+                            <td align="right">-82.4126</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>12075 Leroy Collins Blvd</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1942741</td>
+                            <td align="right">9249571</td>
+                            <td align="right">0.47045</td>
+                            <td align="right">0.75712</td>
+                            <td align="right">9249581</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">146595</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF LOT 21 EVSE 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.061815</td>
+                            <td align="right">-82.40834</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>USF Genshaft Drive</td>
+                            <td align="right">33617</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1942061</td>
+                            <td align="right">2295451</td>
+                            <td align="right">0.53866</td>
+                            <td align="right">0.86689</td>
+                            <td align="right">2295461</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">173731</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF CEDAR DR 02</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.064011</td>
+                            <td align="right">-82.412431</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>4103 USF Cedar Dr</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL251451</td>
+                            <td align="right">14100611</td>
+                            <td align="right">0.65293</td>
+                            <td align="right">1.05079</td>
+                            <td align="right">14100621</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">117199</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF CEDAR DR 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.064069</td>
+                            <td align="right">-82.41242</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>4103 USF Cedar Dr</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL761691</td>
+                            <td align="right">6421841</td>
+                            <td align="right">0.65686</td>
+                            <td align="right">1.05711</td>
+                            <td align="right">6421851</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">146596</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF LOT 9A EVSE 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.063143</td>
+                            <td align="right">-82.41879</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>USF Laurel Drive</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1940831</td>
+                            <td align="right">2293961</td>
+                            <td align="right">0.73563</td>
+                            <td align="right">1.18388</td>
+                            <td align="right">2293971</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>private</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-01-14</td>
+                            <td> </td>
+                            <td>BD</td>
+                            <td>Private</td>
+                            <td align="right">30008</td>
+                            <td>2006-08-15</td>
+                            <td>SG</td>
+                            <td>E</td>
+                            <td>University of South Florida</td>
+                            <td> </td>
+                            <td>2021-03-04T18:40:37Z</td>
+                            <td>COLLEGE_CAMPUS</td>
+                            <td>200-8</td>
+                            <td align="right">28.066556</td>
+                            <td align="right">-82.417169</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>13327 USF Plum Dr</td>
+                            <td align="right">33620</td>
+                            <td>US</td>
+                            <td>B20</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right"></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Privé</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right"></td>
+                            <td align="right">0.89301</td>
+                            <td align="right">1.43716</td>
+                            <td align="right"></td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">146689</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF LAUREL GARAGE 1</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.066648</td>
+                            <td align="right">-82.41842</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>13325 USF Laurel Dr</td>
+                            <td align="right">33613</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1944661</td>
+                            <td align="right">2298861</td>
+                            <td align="right">0.93036</td>
+                            <td align="right">1.49727</td>
+                            <td align="right">2298871</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">146597</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF LOT 38F EVSE 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.066261</td>
+                            <td align="right">-82.424446</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>USF Banyan Circle Drive</td>
+                            <td align="right">33612</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1940811</td>
+                            <td align="right">7831881</td>
+                            <td align="right">1.1238</td>
+                            <td align="right">1.80858</td>
+                            <td align="right">7831891</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">174521</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>USF LOT 38F EVSE 02</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.06632</td>
+                            <td align="right">-82.424446</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>USF Banyan Circle Dr</td>
+                            <td align="right">33612</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL1940791</td>
+                            <td align="right">2293881</td>
+                            <td align="right">1.12671</td>
+                            <td align="right">1.81326</td>
+                            <td align="right">2293891</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily; for customer use only; see front desk for access</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2020-11-03</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">113953</td>
+                            <td>2017-09-01</td>
+                            <td>P</td>
+                            <td>E</td>
+                            <td>West Wing Boutique Hotel - Tesla Destination</td>
+                            <td>813-559-8000 877-798-3752</td>
+                            <td>2021-03-11T23:22:17Z</td>
+                            <td>HOTEL</td>
+                            <td>200-9</td>
+                            <td align="right">28.05362</td>
+                            <td align="right">-82.43124</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>2501 E Fowler Ave</td>
+                            <td align="right">33612</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>TESLA</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">2</td>
+                            <td>Tesla Destination</td>
+                            <td>https://www.tesla.com/destination-charging</td>
+                            <td> </td>
+                            <td>Free</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>23250</td>
+                            <td align="right"></td>
+                            <td align="right">1.19993</td>
+                            <td align="right">1.9311</td>
+                            <td align="right"></td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>private</td>
+                            <td>For employee use only</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-03-15</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Private</td>
+                            <td align="right">123356</td>
+                            <td>2019-05-01</td>
+                            <td>P</td>
+                            <td>E</td>
+                            <td>Verizon - Tampa</td>
+                            <td> </td>
+                            <td>2021-03-15T13:14:11Z</td>
+                            <td>OFFICE_BLDG</td>
+                            <td>200-9</td>
+                            <td align="right">28.060801</td>
+                            <td align="right">-82.370813</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>7701 E Telecom Pkwy</td>
+                            <td align="right">33637</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">4</td>
+                            <td>Non-Networked</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Privé</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right"></td>
+                            <td align="right">2.52995</td>
+                            <td align="right">4.07156</td>
+                            <td align="right"></td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>public</td>
+                            <td>24 hours daily</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>2021-06-24</td>
+                            <td> </td>
+                            <td>ELEC</td>
+                            <td>Public</td>
+                            <td align="right">161664</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>E</td>
+                            <td>PALM LAKE JAEB CENTER 01</td>
+                            <td>888-758-4389</td>
+                            <td>2021-06-24T00:26:29Z</td>
+                            <td> </td>
+                            <td>GPS</td>
+                            <td align="right">28.09169</td>
+                            <td align="right">-82.403516</td>
+                            <td>Tampa</td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FL</td>
+                            <td>15310 Amberly Dr</td>
+                            <td align="right">33647</td>
+                            <td>US</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>J1772</td>
+                            <td> </td>
+                            <td> </td>
+                            <td align="right">1</td>
+                            <td>ChargePoint Network</td>
+                            <td>http://www.chargepoint.com/</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Public</td>
+                            <td> </td>
+                            <td>USCPIL72173</td>
+                            <td align="right">86309</td>
+                            <td align="right">2.60461</td>
+                            <td align="right">4.19171</td>
+                            <td align="right"></td>
+                            <td> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="bg--white">
+        <div class="wrapper">
+            <p class="color--4F4846 font-size--16 text-align--center padding-tb--075">
+
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
